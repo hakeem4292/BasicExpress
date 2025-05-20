@@ -24,6 +24,11 @@ app.get("/",(req,res)=>{
     res.render("index",{users:x})
 })
 
+app.get("/about",(req,res)=>{
+
+    res.send("This is for about page")
+})
+
 app.listen(3000,()=>{
     console.log("Now express run in 3000 port")
 })
