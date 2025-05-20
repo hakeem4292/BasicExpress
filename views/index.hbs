@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h2>This is  for Home Page</h2>
+
+    {{#each users}}
+
+    <div  style="background-color: red; padding: 2px; margin: 5px;">
+        <h2>Name: {{this.name}}</h2>
+        <h2>Email : {{this.email}}</h2>
+
+        {{#if this.isLogin}}
+        <h2>This user is logged</h2>
+        {{else}}
+        <h2>This user is not logged</h2>
+        {{/if}}
+    </div>
+
+    
+
+    {{/each}}
+</body>
+</html>
